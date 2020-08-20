@@ -1,0 +1,62 @@
+*{
+	box-sizing: border-box;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+	background-image: url("bricks_bg.jpg");
+}
+
+#user-input {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1 {
+	font-size: 50px;
+	text-align: center; 
+	color: gold;
+}
+
+input, select {
+	border-radius: 20px;
+	display: block;
+	margin: 0.5rem;
+	width: 250px;
+	padding: 0.5rem;
+	outline: none;
+}
+
+.buttons {
+	width: 150px;
+	height: 50px;
+	font-size: 20px;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	margin-top: 2rem;
+	padding: 0.5rem;
+	background: lightgoldenrodyellow;
+	border: purple;
+	outline: none;
+	color: black;
+}
+
+button:hover {
+	box-shadow: 0 0 20px gray;
+}
+
+.card {
+	vertical-align:top;
+    display: inline-block;
+	min-height: 430px;
+	width: 100%;
+	text-align: center;
+}
+
+.card img {
+	text-align: center;
+	color: rgb(0, 0, 0);
+	width: 315px;
+	height: 430px;
+}

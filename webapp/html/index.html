@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../webapp/css/main.css">
+    <link rel="stylesheet" href="../css/ratingForm.css">
+	<title>AI Card Game</title>
+</head>
+<body onload="getRandomCard()">
+	<header>
+        <h1>AI Card Game</h1>
+        <ratingForm>
+            <!-- The Modal -->
+            <div id="ratingModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div id="user-input">
+                        <select name="archetype" id="archetype">
+                            <option value="default" selected="selected">Select an archetype</option>
+                            <option value="faerie">Faerie</option>
+                            <option value="goblin">Goblin</option>
+                            <option value="human">Human</option>
+                        </select>
+                        <select name="rating" id="rating">
+                            <option value="default" selected="selected">Select a rating</option>
+                            <option value="outstanding">Outstanding</option>
+                            <option value="excellent">Excellent</option>
+                            <option value="good">Good</option>
+                            <option value="satisfactory">Satisfactory</option>
+                            <option value=""marginal">Marginal</option>
+                            <option value=""useless">Useless</option>
+                        </select>
+                        <textarea rows="10" cols="36" class="comments" id="comments" type="text" placeholder="Additional Comments"></textarea>
+                        <button class="submit_button" onclick="submitRating()">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </ratingForm>
+	</header>
+	<main>
+		<div class="card"><img id="card_image"></div>
+        <div class=rateButtonWrapper>
+            <button class="buttons" id="rateButton">Rate Card</button>
+            <button class="buttons" type="button" onclick="getRandomCard()">New Card</button>
+        </div>
+    </main>
+
+    <script defer src="../../webapp/js/ratingForm.js"></script>
+    <script defer src="../../webapp/js/main.js"></script>
+</body>
+</html>
