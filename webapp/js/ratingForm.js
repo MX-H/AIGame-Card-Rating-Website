@@ -2,7 +2,7 @@
 let modal = document.getElementById("ratingModal");
 
 // Get the button that opens the modal
-let btn = document.getElementById("addTaskButton");
+let btn = document.getElementById("ratingButton");
 
 // Get the <span> element that closes the modal
 let span = document.getElementsByClassName("close")[0];
